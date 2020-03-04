@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+mybatis:
+  type-aliases-package: cn.bdqn.demo.entity
+  configuration:
+    auto-mapping-behavior: full
+  mapper-locations: classpath:mapper/*.xml
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/smbms?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    data-username: root
+    data-password: root
