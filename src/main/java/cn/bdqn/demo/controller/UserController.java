@@ -28,7 +28,7 @@ public class UserController {
     @RequestMapping("/cha")
     public  String select(){
         List<User> list=IUserService.findUserAll();
-
+        System.out.println(".............");
         return JSONArray.toJSONString(list);
     }
 }
